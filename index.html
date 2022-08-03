@@ -1,27 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags always come first -->
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+      shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
 
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/font-awesome/css/font-awesome.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="node_modules/bootstrap-social/bootstrap-social.css"
-    />
+    <link rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Ristorante Con Fusion</title>
@@ -30,17 +23,12 @@
   <body>
     <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
       <div class="container">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#Navbar"
-        >
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#Navbar">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand mr-auto" href="#"
-          ><img src="img/logo.png" height="30" width="40"
-        /></a>
+        <a class="navbar-brand mr-auto" href="#"><img src="img/logo.png"
+            height="30" width="40" /></a>
         <div class="collapse navbar-collapse" id="Navbar">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
@@ -78,9 +66,16 @@
               your culinary senses!
             </p>
           </div>
-          <div class="col-12 col-sm align-self-center">
+          <div class="col-12 col-sm-3 align-self-center">
             <img src="img/logo.png" class="img-fluid" />
           </div>
+          <div class="col-12 col-sm-3 align-self-center">
+            <button type="submit" class="btn btn-warning btn-block btn-lg"
+              onclick="location.href='#reservediv'">
+              Reserve
+            </button>
+          </div>
+
         </div>
       </div>
     </header>
@@ -92,11 +87,8 @@
         </div>
         <div class="col col-sm order-sm-first col-md">
           <div class="media">
-            <img
-              class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/uthappizza.png"
-              alt="uthappizza"
-            />
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/uthappizza.png" alt="uthappizza" />
             <div class="media-body">
               <h2 class="mt-0">
                 Uthappizza<span class="badge badge-danger ml-2">HOT</span>
@@ -113,17 +105,27 @@
       </div>
 
       <div class="row row-content align-items-center">
-        <div class="col-12 col-sm-4 col-md-3">
+        <div class="col-12 col-sm-4 order-sm-first col-md-3">
           <h3>This Month's Promotions</h3>
         </div>
-        <div class="col col-sm col-md">
-          <h2>Weekend Grand Buffet</h2>
-          <p class="d-none d-sm-block">
-            Featuring mouthwatering combinations with a choice of five different
-            salads, six enticing appetizers, six main entrees and five choicest
-            desserts. Free flowing bubbly and soft drinks. All for just $19.99
-            per person
-          </p>
+        <div class="col col-sm order-sm-last col-md">
+          <div class="media">
+            <img class="d-flex ml-3 img-thumbnail align-self-center
+              order-sm-last" src="img/buffet.png" alt="buffet" />
+            <div class="media-body order-sm-first">
+              <h2 class="mt-0">Weekend Grand buffet<span class="badge
+                  badge-danger ml-2">NEW</span></h2>
+              <p class="d-none d-sm-block">
+                Featuring mouthwatering combinations with a choice of five
+                different
+                salads, six enticing appetizers, six main entrees and five
+                choicest
+                desserts. Free flowing bubbly and soft drinks. All for just
+                $19.99
+                per person
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -133,11 +135,8 @@
         </div>
         <div class="col col-sm order-sm-first col-md">
           <div class="media">
-            <img
-              class="d-flex mr-3 img-thumbnail align-self-center"
-              src="img/zakaria.jpg"
-              alt="zakaria"
-            />
+            <img class="d-flex mr-3 img-thumbnail align-self-center"
+              src="img/zakaria.jpg" alt="zakaria" />
             <div class="media-body">
               <h2 class="mt-0">Zakaria Ibrahim</h2>
               <h4>Executive Chef</h4>
@@ -151,6 +150,80 @@
           </div>
         </div>
       </div>
+
+      <div id="reservediv" class="row row-content align-items-center">
+        <div class="col-8 offset-2">
+          <div class="card">
+            <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+            <div class="card-body">
+              <form>
+                <div class="form-group row">
+                  <label class="col-md-2 col-form-label">
+                    Number of Guest
+                  </label>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio1"
+                      value="option1">
+                    <label class="form-check-label" for="inlineRadio1">1</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio2"
+                      value="option2">
+                    <label class="form-check-label" for="inlineRadio2">2</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio3"
+                      value="option3">
+                    <label class="form-check-label" for="inlineRadio3">3</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio4"
+                      value="option4">
+                    <label class="form-check-label" for="inlineRadio4">4</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio5"
+                      value="option5">
+                    <label class="form-check-label" for="inlineRadio5">5</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio"
+                      name="inlineRadioOptions" id="inlineRadio6"
+                      value="option6">
+                    <label class="form-check-label" for="inlineRadio6">6</label>
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <label for="telephone" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                  <div class="col-12 col-md-4">
+                    <input type="date" class="form-control" id="reserve-date"
+                      name="reserve-date" />
+                  </div>
+                  <div class="col-12 col-md-4">
+                    <input type="time" class="form-control" id="reserve-time"
+                      name="reserve-time" />
+                  </div>
+                </div>
+
+                <div class="form-group row">
+                  <div class="offset-md-2 col-md-10">
+                    <button type="submit" class="btn btn-primary">
+                      Reserve
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </divclas>
+          </div>
+        </div>
+      </div>
+
     </div>
 
     <footer class="footer">
@@ -179,34 +252,24 @@
           </div>
           <div class="col-12 col-sm-4 align-self-center">
             <div class="text-center">
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://google.com/+"
-              >
+              <a class="btn btn-social-icon btn-google"
+                href="http://google.com/+">
                 <i class="fa fa-google-plus fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-facebook"
-                href="http://www.facebook.com/profile.php?id="
-              >
+              <a class="btn btn-social-icon btn-facebook"
+                href="http://www.facebook.com/profile.php?id=">
                 <i class="fa fa-facebook fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-linkedin"
-                href="http://www.linkedin.com/in/"
-              >
+              <a class="btn btn-social-icon btn-linkedin"
+                href="http://www.linkedin.com/in/">
                 <i class="fa fa-linkedin fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-twitter"
-                href="http://twitter.com/"
-              >
+              <a class="btn btn-social-icon btn-twitter"
+                href="http://twitter.com/">
                 <i class="fa fa-twitter fa-lg"></i>
               </a>
-              <a
-                class="btn btn-social-icon btn-google"
-                href="http://youtube.com/"
-              >
+              <a class="btn btn-social-icon btn-google"
+                href="http://youtube.com/">
                 <i class="fa fa-youtube fa-lg"></i>
               </a>
               <a class="btn btn-social-icon" href="mailto:">
@@ -228,4 +291,5 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
+
 </html>
