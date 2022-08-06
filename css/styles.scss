@@ -76,6 +76,42 @@ body {
   z-index: 1;
 }
 
+#reserveModal {
+  .modal-header {
+    background-color: $background-dark;
+
+    h3 {
+      color: floralwhite;
+    }
+    
+    button {
+      color: floralwhite;
+    }
+  }
+
+  .modal-body {
+    background-color: $background-pale;
+  }
+}
+
+#loginModal {
+  .modal-header {
+    background-color: $background-dark;
+
+    h4 {
+      color: floralwhite;
+    }
+    
+    button {
+      color: floralwhite;
+    }
+  }
+
+  .modal-body {
+    background-color: $background-pale;
+  }
+}
+
 #loginSpan {
   cursor: pointer;
 }
