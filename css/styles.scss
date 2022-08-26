@@ -1,7 +1,9 @@
 $lt-gray: #ddd;
-$background-dark: #512dab;
-$background-light: #9575cd;
+$background-dark: 	#191970;
+$background-light: #f0ffff;
 $background-pale: #d1c4e9;
+$background-jumbotron: #2f4f4f;
+$background-footer: #e6e6fa;
 
 //Height Variables:
 $carousel-item-height: 300px;
@@ -23,13 +25,13 @@ $carousel-item-height: 300px;
 }
 
 .footer {
-  background-color: $background-pale;
+  background-color: $background-footer;
   @include zero-margin(20px, 0px);
 }
 
 .jumbotron {
   @include zero-margin(70px, 30px);
-  background: $background-light;
+  background: $background-jumbotron;
   color: floralwhite;
 }
 
@@ -42,10 +44,17 @@ address {
 body {
   padding: 50px 0px 0px 0px;
   z-index: 0;
+  background-color: $background-light;
 }
 
-.navbar-dark {
-  background-color: $background-dark;
+.card-body {
+  background-color: $background-footer;
+}
+
+.navbar{
+  background-color: $background-light;
+  margin: 0 auto 2rem;
+  border-bottom: 0.2rem solid lightgray;
 }
 
 .tab-content {
@@ -114,4 +123,14 @@ body {
 
 #loginSpan {
   cursor: pointer;
+}
+
+#accordion {
+  .card-header {
+    background-color: #fff;
+
+    a {
+      cursor: pointer;
+    }
+  }
 }
