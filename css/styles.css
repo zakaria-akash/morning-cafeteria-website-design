@@ -86,3 +86,17 @@ body {
   background-color: #fff; }
   #accordion .card-header a {
     cursor: pointer; }
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805; }
+  50% {
+    background-color: #2ba805;
+    box-shadow: 0 0 20px #2ba805; }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805; } }
+
+#reserveButton {
+  animation: glowing 1300ms infinite; }

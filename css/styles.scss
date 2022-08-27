@@ -1,5 +1,5 @@
 $lt-gray: #ddd;
-$background-dark: 	#191970;
+$background-dark: #191970;
 $background-light: #f0ffff;
 $background-pale: #d1c4e9;
 $background-jumbotron: #2f4f4f;
@@ -51,7 +51,7 @@ body {
   background-color: $background-footer;
 }
 
-.navbar{
+.navbar {
   background-color: $background-light;
   margin: 0 auto 2rem;
   border-bottom: 0.2rem solid lightgray;
@@ -92,7 +92,7 @@ body {
     h3 {
       color: floralwhite;
     }
-    
+
     button {
       color: floralwhite;
     }
@@ -110,7 +110,7 @@ body {
     h4 {
       color: floralwhite;
     }
-    
+
     button {
       color: floralwhite;
     }
@@ -133,4 +133,22 @@ body {
       cursor: pointer;
     }
   }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background-color: #2ba805;
+    box-shadow: 0 0 20px #2ba805;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}
+#reserveButton {
+  animation: glowing 1300ms infinite;
 }
